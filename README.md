@@ -28,15 +28,6 @@ Data Insights - SQL Queries (Tab 4):
 
 Provides a selection of pre-defined SQL queries to gain various insights into the student data (e.g., average performance per batch, placement status summaries, top performers).
 
-🚀 Setup and Installation
-To run this application, you'll need Python, Streamlit, MySQL, and the necessary Python libraries.
-
-Prerequisites
-Python 3.7+
-
-MySQL Database: Ensure you have a MySQL server running.
-
-Database Schema: The application expects a database named faker_db with the following tables:
 
 Students: Contains general student information (student_id, name, age, gender, email, phone, city, course_batch, enrollment_year, graduation_year).
 
@@ -46,32 +37,6 @@ SoftSkills: Contains soft skill scores (student_id, communication, teamwork, pre
 
 Placements: Contains placement-related data (student_id, placement_status, company_name, placement_package, mock_interview_score, interview_rounds_cleared).
 
-You will need to populate these tables with your own data.
-
-Database Connection Configuration
-The connect_db() function uses the following credentials:
-
-    host="localhost",
-    user="root",
-    password="Sheela@1981", # IMPORTANT: Change this password for production environments!
-    port=3306,
-    database="faker_db"
-
-Important: For a production environment, it is highly recommended to use environment variables or a more secure method to manage your database credentials instead of hardcoding them.
-
-Python Dependencies
-Install the required Python libraries using pip:
-
-pip install streamlit mysql-connector-python pandas
-
-Running the Application
-Save the code: Save the provided Python code as a .py file (e.g., app.py).
-
-Run Streamlit: Open your terminal or command prompt, navigate to the directory where you saved app.py, and run:
-
-streamlit run app.py
-
-This will open the application in your web browser.
 
 💡 Usage
 The application is structured into four tabs for easy navigation:
